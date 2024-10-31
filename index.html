@@ -1308,9 +1308,9 @@
         font-size: 29;
         color: dark#db03db;
         border-radius: 16px;
-        border: solid 1px #000;
-        text-transform: uppercase;
-        padding: 7px 15px;
+        border: solid 2px #7e00b5;
+    text-transform: uppercase;
+    padding: 7px 20px;
         cursor: pointer;
         margin: 15px;
         text-align: center;
@@ -1357,6 +1357,18 @@
         /*  animation: 2.2s rotate linear infinite;  */
       }
 
+        @media screen and (max-width: 800px) {
+          h2 {font-size: 46px;}
+          body {padding-top: 3vh;}
+           canvas {width: 80%;
+                  height: 50%;}
+          .button {font-size: larger;
+    border-radius: 26px;
+    padding: 15px 35px;
+                  margin: 2vh 1vh;
+                  }
+        }
+
       @supports (-webkit-appearance: none) and (not (overflow: -webkit-marquee))
         and (not (-ms-ime-align: auto)) and (not (-moz-appearance: none)) {
         @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
@@ -1387,11 +1399,7 @@
         }
       }
 
-     
-
-        @media screen and (max-width: 800px) {
-           canvas {width: 80%;}
-        }
+    
 
 
     </style>
@@ -1447,7 +1455,7 @@
         //  context.fillRect(0, 0, 950, 390);
 
         context.strokeStyle = currentColor;
-        context.lineWidth = 28;  /* original line width = 19 */
+        context.lineWidth = 24;  /* original line width = 19 */
         context.shadowBlur = 28;
         /*  context.shadowColor = "#5b5b5dc7";  */
 
