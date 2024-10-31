@@ -1534,7 +1534,7 @@
         if (ratio < 1) {
           requestAnimationFrame(function () {
             animate(
-              ratio + 0.055  /* higher value = faster drawn line */
+              ratio + 0.047  /* higher value = faster drawn line */
             ); 
           });
         } else {
@@ -1578,7 +1578,7 @@
 
           color = randColor();
           animate();
-        }, 670);   /* lower value = faster function call; less time between line animates  */
+        }, 640);   /* lower value = faster function call; less time between line animates  */
 
         animate();
         dontRun = false;
