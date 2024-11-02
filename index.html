@@ -1456,7 +1456,7 @@
         //  context.fillRect(0, 0, 950, 390);
 
         context.strokeStyle = currentColor;
-        context.lineWidth = 24;  /* original line width = 19 */
+        context.lineWidth = 22;  /* original line width = 19 */
         context.shadowBlur = 28;
         /*  context.shadowColor = "#5b5b5dc7";  */
 
@@ -1543,7 +1543,7 @@
         if (ratio < 1) {
           requestAnimationFrame(function () {
             animate(
-              ratio + 0.047  /* higher value = faster drawn line */
+              ratio + 0.027  /* higher value = faster drawn line */
             ); 
           });
         } else {
