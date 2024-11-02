@@ -1456,8 +1456,8 @@
         //  context.fillRect(0, 0, 950, 390);
 
         context.strokeStyle = currentColor;
-        context.lineWidth = 22;  /* original line width = 19 */
-        context.shadowBlur = 22;
+        context.lineWidth = 24;  /* original line width = 19 */
+        context.shadowBlur = 24;
         /*  context.shadowColor = "#5b5b5dc7";  */
 
         if (color == "#00a2ff") {
@@ -1509,10 +1509,10 @@
         if (randLine == "leftToRight") {
           randValues[0] = 0;
           randValues[1] = Math.floor(Math.random() * 329 + 1);
-          randValues[2] = 400; /*620 = newest */
+          randValues[2] = 600; /*620 = newest */
           randValues[3] = Math.floor(Math.random() * 329 + 1);
         } else if (randLine == "rightToLeft") {
-          randValues[0] = 500; /* 500 = newest, 800 */
+          randValues[0] = 600; /* 500 = newest, 800 */
           randValues[1] = Math.floor(Math.random() * 329 + 1);
           randValues[2] = -120;
           randValues[3] = Math.floor(Math.random() * 329 + 1);
