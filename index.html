@@ -2,9 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Animation</title>
-
-  
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1152,7 +1151,6 @@
         background-attachment: fixed;
         overflow: hidden;
         margin: 0px auto;
-        padding-top: 0px;
         height: 100vh;
         width: 100%;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -1335,8 +1333,8 @@
         display: block;
       /*  height: 340px; 
           width: 670px; */
-        height: 65%;
-        width: 60%;  
+        height: 55%;
+        width: 50%;  
         border: 24px solid;
         background-color: #000000b3;
         border-image-slice: 1;
@@ -1357,16 +1355,19 @@
         /*  animation: 2.2s rotate linear infinite;  */
       }
 
+      @media screen and (min-width: 1401px) {
+         canvas {width: 45%;
+                  height: 60%;}
+      }
+
         @media screen and (max-width: 800px) {
-          h2 {font-size: 46px;}
-          body {padding-top: 3vh;}
+          h2 {font-size: 5vw;
+        letter-spacing: 3px;}
+          body {padding-top: 1vh;}
            canvas {width: 80%;
-                  height: 50%;}
-          .button {font-size: larger;
-    border-radius: 26px;
-    padding: 15px 35px;
-                  margin: 2vh 1vh;
-                  }
+                  height: 50%;
+                  border: 17px solid;}
+          .button {margin: 2vh 1vh;}
         }
 
       @supports (-webkit-appearance: none) and (not (overflow: -webkit-marquee))
@@ -1415,7 +1416,7 @@
     </div>
 
     <p id="displayColor"></p>
-    <canvas id="board" width="500px" height="340px"></canvas>
+    <canvas id="board"></canvas>
 
     <!--        <p id="displayColor"></p>   -->
 
