@@ -1331,10 +1331,8 @@
         padding: 0px;
         margin: 0 auto;
         display: block;
-      /*  height: 340px; 
-          width: 670px; */
-        height: 55%;
-        width: 50%;  
+      height: 320px;
+        width: 650px;
         border: 24px solid;
         background-color: #000000b3;
         border-image-slice: 1;
@@ -1370,7 +1368,7 @@
           .button {margin: 2vh 1vh;}
         }
 
-      @supports (-webkit-appearance: none) and (not (overflow: -webkit-marquee))
+  /*    @supports (-webkit-appearance: none) and (not (overflow: -webkit-marquee))
         and (not (-ms-ime-align: auto)) and (not (-moz-appearance: none)) {
         @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
           @property --angle {
@@ -1398,9 +1396,9 @@
             }
           }
         }
-      }
+      }    */
 
-    
+   
 
 
     </style>
@@ -1456,8 +1454,8 @@
         //  context.fillRect(0, 0, 950, 390);
 
         context.strokeStyle = currentColor;
-        context.lineWidth = 20;  /* original line width = 19 */
-        context.shadowBlur = 24;
+        context.lineWidth = 24;  /* original line width = 19 */
+        context.shadowBlur = 28;
         /*  context.shadowColor = "#5b5b5dc7";  */
 
         if (color == "#00a2ff") {
@@ -1507,15 +1505,15 @@
       function getRandLine() {
         getRandValues();
         if (randLine == "leftToRight") {
-          randValues[0] = 0;
-          randValues[1] = Math.floor(Math.random() * 329 + 1);
-          randValues[2] = 500; /*620 = newest */
-          randValues[3] = Math.floor(Math.random() * 329 + 1);
+          randValues[0] = -200;
+          randValues[1] = Math.floor(Math.random() * 299 + 1);
+          randValues[2] = 700; 
+          randValues[3] = Math.floor(Math.random() * 299 + 1);
         } else if (randLine == "rightToLeft") {
-          randValues[0] = 700; /* 500 = newest, 800 */
-          randValues[1] = Math.floor(Math.random() * 329 + 1);
-          randValues[2] = -120;
-          randValues[3] = Math.floor(Math.random() * 329 + 1);
+          randValues[0] = 700; 
+          randValues[1] = Math.floor(Math.random() * 299 + 1);
+          randValues[2] = -200;
+          randValues[3] = Math.floor(Math.random() * 299 + 1);
         }
         return randValues;
       }
@@ -1543,7 +1541,7 @@
         if (ratio < 1) {
           requestAnimationFrame(function () {
             animate(
-              ratio + 0.027  /* higher value = faster drawn line */
+              ratio + 0.03  /* higher value = faster drawn line */
             ); 
           });
         } else {
